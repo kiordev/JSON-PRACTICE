@@ -1,0 +1,20 @@
+{
+    "Name": "Sasha",
+    "Phone": "8-800-555-35-35",
+    "Media": {
+        "VK": "vk.com/blablabla",
+        "Youtube": "blablabla"
+    },
+    "Mass": [
+        1,
+        "h",
+        {
+            "a": 1
+        },
+        [
+            1,
+            2,
+            3
+        ]
+    ]
+}
