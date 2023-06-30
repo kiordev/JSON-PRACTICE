@@ -1,13 +1,35 @@
-import json as js
+import json
+# Открываем файл Json для чтения. 'имя джейсона''чтение'
+with open('package.json', 'r') as json_file:
+    # Назначаем джейсон в дату
+    data = json.load(json_file)
 
-data = {
-    "to_user": "Sergey",
-    "text": "hello",
-    "attachments": ['1.png', '2.wav'],
-    "type": 'direct',
-    'demolition': None,
-}
+while True:
+    name = input("Enter name")
+    surname = input("Enter surname")
+    # Создаем новую структуру данных для добавления
+    new_person = {
+        "name": name,
+        "surname": surname
+    }
 
-json_str = js.dumps({1, 2, 3}) #py obj to json string
+    # Используем метод списка для добавления новых элементов
+    data["Users"].append(new_person)
+    # Опять открываем файл джейсона но уже для записи
+    with open('package.json', "w") as json_file:
+        # Пишем команду (переменная в которой джейсон, переменная обработчик, кол-во табуляций)
+        json.dump(data, json_file, indent=2)
 
-print(json_str)
+
+#  Записываем в переменную дата json
+# data = json.loads('')
+#
+# for item in data['response']['items']:
+#     del item['id']
+#     item['likes'] = "booo"
+#
+# print(data['response']['items'])
+#
+# with open('package.json', 'w') as file:
+#     json.dump(data, file, indent=2)
+
