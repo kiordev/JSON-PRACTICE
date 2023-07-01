@@ -9,8 +9,7 @@ while True:
     surname = input("Enter surname")
     # Создаем новую структуру данных для добавления
     new_person = {
-        "name": name,
-        "surname": surname
+
     }
 
     # Используем метод списка для добавления новых элементов

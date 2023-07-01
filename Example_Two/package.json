@@ -1,0 +1,35 @@
+{
+  "Films": [
+     {
+      "title": "The Shawshank Redemption",
+      "genre": "Drama",
+      "year": 1999,
+      "duration": 142
+    },
+  {
+      "title": "The Godfather",
+      "genre": "Crime",
+      "year": 1972,
+      "duration": 175
+  },
+  {
+      "title": "Pulp Fiction",
+      "genre": "Crime",
+      "year": 1994,
+      "duration": 154
+  },
+  {
+      "title": "Fight Club",
+      "genre": "Drama",
+      "year": 1999,
+      "duration": 139
+  },
+  {
+      "title": "The Dark Knight",
+      "genre": "Action",
+      "year": 2008,
+      "duration": 152
+  }
+  ]
+
+}
